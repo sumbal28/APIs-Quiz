@@ -90,3 +90,58 @@ You are required to submit BOTH of the following for review:
 
 ## DOM (Document Object Model)
 
+The addEventListener() method attaches an event handler to the specified element.
+
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+
+You can add many event handlers to one element.
+
+You can add many event handlers of the same type to one element, i.e two "click" events.
+
+You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+
+The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+
+You can easily remove an event listener by using the removeEventListener() method.
+
+Syntax
+element.addEventListener(event, function, useCapture);
+The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)
+
+The second parameter is the function we want to call when the event occurs.
+
+The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+
+Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".
+
+With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+The HTML DOM Tree of Objects
+DOM HTML tree
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+Element.setAttribute()
+Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+
+To get the current value of an attribute, use getAttribute(); to remove an attribute, call removeAttribute().
+
+Syntax
+setAttribute(name, value)
+Copy to Clipboard
+Parameters
+name
+A string specifying the name of the attribute whose value is to be set. The attribute name is automatically converted to all lower-case when setAttribute() is called on an HTML element in an HTML document.
