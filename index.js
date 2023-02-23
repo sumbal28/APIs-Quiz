@@ -8,7 +8,13 @@ let currentQuestion = 0;
 
 
 
-document.querySelector("#question-title").textContent = questions[0].question
+ /*document.querySelector("#question-title").textContent = questions[0].question
+ console.log(questions[0].answers[0])
+ console.log(questions[0].answers[1])
+ console.log(questions[0].answers[2])
+ console.log(questions[0].answers[3])*/
+
+
 document.querySelector("#question-title").textContent = questions[1].question
 
 console.log(questions[currentQuestion].answers[0])
